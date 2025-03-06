@@ -1,0 +1,10 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/username/public_html/
+    - /bin/cp -R .next $DEPLOYPATH
+    - /bin/cp -R public $DEPLOYPATH
+    - /bin/cp package.json $DEPLOYPATH
+    - /bin/cp package-lock.json $DEPLOYPATH
+    - /bin/cp next.config.js $DEPLOYPATH
+
